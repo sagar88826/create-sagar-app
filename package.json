@@ -1,0 +1,54 @@
+{
+  "name": "create-sagar-app",
+  "version": "1.0.0",
+  "description": "CLI tool to create MERN stack projects with best practices",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "create-sagar-app": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "src/templates"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx --watch src/index.ts",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "mern",
+    "stack",
+    "create",
+    "template",
+    "typescript",
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "cli"
+  ],
+  "author": "Sagar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/create-sagar-app"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.15"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
