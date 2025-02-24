@@ -11,12 +11,11 @@ const pkg = JSON.parse(readFileSync(join(__dirname, "../package.json"), "utf8"))
 
 const program = new Command();
 
-program.name("create-sagar-app").description("CLI to scaffold various project templates").version(pkg.version);
-
 program
-  .command("create")
-  .description("Create a new project")
-  .argument("<name>", "Project name")
+  .name("create-sagar-app")
+  .description("CLI to scaffold various project templates")
+  .version(pkg.version)
+  .argument("<project-name>", "Project name")
   .option("-t, --template <template>", "Template to use (mern)", "mern")
   .action(createProject);
 
