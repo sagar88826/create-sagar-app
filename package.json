@@ -1,6 +1,6 @@
 {
   "name": "create-sagar-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool to create MERN stack projects with best practices",
   "main": "dist/index.js",
   "type": "module",
